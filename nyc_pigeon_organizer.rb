@@ -1,6 +1,7 @@
 def nyc_pigeon_organizer(data)
 
 final_answer = data.each_with_object({}) do | (key, value),  final_array |
+  binding.pry
   value.each do | innerkey, names |
     names.each do |name|
       if !final_array[name]
